@@ -1,7 +1,4 @@
 
-# from pioneers_store.src.selenium_extended.SeleniumExtended import SeleniumExtended
-# from pioneers_store.src.pages.locators.MyAccountSignedInPageLocators import MyAccountSignedInPageLocators
-
 from libraries.pages.BasePage import BasePage
 
 

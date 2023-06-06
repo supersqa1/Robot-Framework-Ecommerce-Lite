@@ -1,1 +1,0 @@
-/Users/admas/Projects/teaching/QA-LIVE/demostore-robot-framework-base/venv_rf/bin/python -m robot --pythonpath=. --variable=BROWSER:CHROME --include=tcid33 tests

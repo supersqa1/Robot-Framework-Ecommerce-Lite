@@ -22,10 +22,6 @@ class CheckoutPage(BasePage):
 
     PLACE_ORDER_BTN = 'id:place_order'
 
-    # def __init__(self, driver):
-    #     self.driver = driver
-    #     self.sl = SeleniumExtended(driver)
-
     def go_to_checkout_page(self):
         base_url = MainConfigs.get_base_url()
         checkout_url = base_url + self.endpoint

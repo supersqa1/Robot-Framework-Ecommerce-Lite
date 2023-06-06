@@ -1,13 +1,9 @@
 
 
-# from pioneers_store.src.selenium_extended.SeleniumExtended import SeleniumExtended
-# from pioneers_store.src.pages.CartPageLocators import CartPageLocators
-# from pioneers_store.src.pages.locators.CartPageLocators import CartPageLocators
+
 from libraries.configs.MainConfigs import MainConfigs
 from libraries.pages.BasePage import BasePage
-# import sys, pdb;
 
-# pdb.Pdb(stdout=sys.__stdout__).set_trace()
 
 class CartPage(BasePage):
 

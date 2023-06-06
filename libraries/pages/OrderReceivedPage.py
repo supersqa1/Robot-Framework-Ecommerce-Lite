@@ -1,18 +1,13 @@
 
-# from pioneers_store.src.selenium_extended.SeleniumExtended import SeleniumExtended
-# from pioneers_store.src.pages.locators.OrderReceivedPageLocators import OrderReceivedPageLocators
-
 from libraries.pages.BasePage import BasePage
 
 
 
 class OrderReceivedPage(BasePage):
+
     PAGE_MAIN_HEADER = 'css:header h1.entry-title'
     ORDER_NUMBER = 'css:li.order strong'
 
-    # def __init__(self, driver):
-    #     self.driver = driver
-    #     self.sl = SeleniumExtended(self.driver)
 
     def verify_order_received_page_loaded(self):
         # self.sl.wait_until_element_contains_text(self.PAGE_MAIN_HEADER, "Order received")
