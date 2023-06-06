@@ -1,4 +1,11 @@
 
 BROWSER=CHROME
+CREDENTIALS_VARIABLE_FILE=./variables_credentials_local.py
 
-python3 -m robot --pythonpath=. --variable=BROWSER:${BROWSER} --include=$1 tests
+robot \
+--pythonpath=. \
+--variable=BROWSER:${BROWSER} \
+--variablefile=${CREDENTIALS_VARIABLE_FILE} \
+-L debug \
+--include=$1 \
+./tests
