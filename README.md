@@ -25,8 +25,8 @@ Example site for testing: http://demostore.supersqa.com/
 
 ### Clone the code
 ```
-git clone git@github.com:supersqa1/robot-rramework-ecommerce-lite.git
-cd robot-rramework-ecommerce-lite
+git clone git@github.com:supersqa1/Robot-Framework-Ecommerce-Lite.git
+cd Robot-Framework-Ecommerce-Lite
 ```
 
 ### Create virtual environment and install requirements
