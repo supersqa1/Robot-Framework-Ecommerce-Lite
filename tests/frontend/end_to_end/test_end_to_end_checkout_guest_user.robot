@@ -19,7 +19,7 @@ Test Teardown   close browser
 
 *** Test Cases ***
 End to end checkout guest user
-    [Tags]    tcid33    pioneertcid3    feregression    fesmoke    home_page    example
+    [Tags]    tcid33    feregression    fesmoke    home_page    example
 
                             # go to home page
                             HomePage.go_to_home_page

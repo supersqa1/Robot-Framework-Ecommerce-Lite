@@ -10,7 +10,7 @@ Suite Teardown  close all browsers
 
 *** Test Cases ***
 test_register_valid_new_user
-    [Tags]    tcid13    pioneertcid2    feregression    fesmoke    my_account
+    [Tags]    tcid13    feregression    fesmoke    my_account
 
         # go to my account page
         MyAccountSignedOutPage.go_to_my_account

@@ -17,7 +17,7 @@ Test Teardown   close browser
 *** Test Cases ***
 test_verify_free_shipping_banner_displayed_in_home_page(self)
 
-    [Tags]    tcid69    pioneertcid7    notificationbar    feregression    fesmoke    example
+    [Tags]    tcid69    notificationbar    feregression    fesmoke    example
 
         # go to home page
         HomePage.go_to_home_page
@@ -28,7 +28,7 @@ test_verify_free_shipping_banner_displayed_in_home_page(self)
 
 test_verify_free_shipping_banner_displayed_in_cart_page
 
-    [Tags]    tcid70    pioneertcid8   notificationbar    feregression    fesmoke    example
+    [Tags]    tcid70    notificationbar    feregression    fesmoke    example
 
         # go to home page
         CartPage.go_to_cart_page
@@ -39,7 +39,7 @@ test_verify_free_shipping_banner_displayed_in_cart_page
 
 test_verify_free_shipping_banner_displayed_in_checkout_page(self)
 
-    [Tags]    tcid71    pioneertcid9   notificationbar    feregression    fesmoke    example
+    [Tags]    tcid71    notificationbar    feregression    fesmoke    example
 
         HomePage.go_to_home_page
         HomePage.click_first_add_to_cart_button
@@ -50,7 +50,7 @@ test_verify_free_shipping_banner_displayed_in_checkout_page(self)
 
 test_verify_free_shipping_banner_not_displayed_in_my_account_page
 
-    [Tags]    tcid72    pioneertcid10   notificationbar    feregression    fesmoke    example
+    [Tags]    tcid72    notificationbar    feregression    fesmoke    example
 
         MyAccountSignedOutPage.go_to_my_account
 

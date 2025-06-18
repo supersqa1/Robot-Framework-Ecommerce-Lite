@@ -8,12 +8,12 @@ Suite Teardown    close all browsers
 
 
 *** Variables ***
-${expected_number_of_products}     12
+${expected_number_of_products}     16
 
 
 *** Test Cases ***
 test_verify_number_of_products_displayed
-    [Tags]    tcid1    pioneertcid4    feregression    fesmoke    home_page    example
+    [Tags]    tcid1    feregression    fesmoke    home_page    example
 
                             HomePage.go to home page
     ${displayed_products}   HomePage.get_number_of_products_displayed
@@ -25,7 +25,7 @@ test_verify_number_of_products_displayed
 
 
 test_verify_heading_is_displayed
-    [Tags]    tcid67    pioneertcid5    feregression    fesmoke    home_page    example
+    [Tags]    tcid67    feregression    fesmoke    home_page    example
 
         ${expected_heading}     set variable    Shop
 
@@ -36,7 +36,7 @@ test_verify_heading_is_displayed
 
 
 test_verify_header_menu_is_displayed:
-    [Tags]    tcid4    pioneertcid6        feregression    fesmoke    home_page    example
+    [Tags]    tcid4    feregression    fesmoke    home_page    example
 
         Header.assert_all_menu_items_displayed
 

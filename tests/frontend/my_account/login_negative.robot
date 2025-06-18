@@ -10,7 +10,7 @@ Test Teardown       close browser
 
 *** Test Cases ***
 Login none existing user
-    [Tags]    tcid12    pioneertcid1    feregression    fesmoke    my_account
+    [Tags]    tcid12    feregression    fesmoke    my_account
 
 
                         my_acct.go_to_my_account

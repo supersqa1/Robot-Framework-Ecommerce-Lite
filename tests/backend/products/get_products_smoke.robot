@@ -9,14 +9,14 @@ Library    ../../../libraries/dao/ProductsDAO.py
 
 *** Test Cases ***
 test_get_all_products_returns_not_empty
-    [Tags]    tcid24    pioneertcid15    beregression    besmoke    products_api
+    [Tags]    tcid24    beregression    besmoke    products_api
 
     ${rs_api}    WooAPIUtility.get    products  expected_status_code=200
                  should not be empty    ${rs_api}    Get all products endpoint returned nothing.
 
 
 test_end_to_end_checkout_guest_user
-    [Tags]    tcid25    pioneertcid14    beregression    besmoke    products_api
+    [Tags]    tcid25    beregression    besmoke    products_api
 
     # get product that exists from db (also could have gotten it from api (list-products)
     ${rand_product}     ProductsDAO.get_random_product_from_db
