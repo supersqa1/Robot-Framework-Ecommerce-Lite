@@ -9,7 +9,7 @@ Library    ../../../libraries/dao/CustomersDAO.py    AS    cust_dao
 *** Test Cases ***
 Create customer only email password
 
-    [Tags]    tcid29    pioneertcid11    beregression    besmoke    customers_api    example
+    [Tags]    tcid29    beregression    besmoke    customers_api    example
 
 
     # create payload with email and password only
@@ -36,7 +36,7 @@ Create customer only email password
                 length should be        ${db_info}    1    Expected 1 record for customer in 'users' table.
                 should not be empty     ${db_info[0]['user_pass']}    After creating user with api, the password field in DB is empty.
 
-    ${expected_display_name}    Evaluate    $email.split('@')[0]
+    ${expected_display_name}    Evaluate    "${email}".split('@')[0]
 
     should be equal    ${db_info[0]['display_name']}    ${expected_display_name}    Display name database does not match expected." \
         ...    Email: {email}, Expected display: ${expected_display_name}
@@ -49,7 +49,7 @@ Create customer only email password
 
 Create customer fail for existing email
 
-    [Tags]   tcid47    pioneertcid12    beregression    besmoke    customers_api    example
+    [Tags]   tcid47    beregression    besmoke    customers_api    example
 
     # get random existing customer (from api or from db) - in this example we get it from db
     ${rand_cust}     cust_dao.get_random_customer_from_db
@@ -75,12 +75,12 @@ Create customer fail for existing email
 
 Create customer fail when no password is provided
 
-    [Tags]   tcid32    pioneertcid13    beregression    besmoke    customers_api    example
+    [Tags]   tcid32    beregression    besmoke    customers_api    example
 
     # get random email
     ${random_info}    genericUtilities.generate_random_email_and_password
 
-    ${payload}  evaluate    {"email": $random_info["email"]}
+    ${payload}  evaluate    {"email": "${random_info["email"]}"}
 
     ${rs_api}   WooAPIUtility.post    wc_endpoint=customers    params=${payload}  expected_status_code=400
                 log to console    ${rs_api}

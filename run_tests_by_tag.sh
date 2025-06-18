@@ -1,5 +1,5 @@
 
-source ./credentials_local.sh
+source ./variables_local.sh
 
 
 BROWSER=CHROME
